@@ -3,22 +3,18 @@ using namespace std;
 
 int missing(vector<int> &nums)
 {
-    int j = 0;
-    sort(nums.begin(), nums.end());
+    if (nums.empty()) return 0; // Handle empty array case
 
-    if (nums[0] != 0)
-        return 0;
+    sort(nums.begin(), nums.end()); // O(n log n)
 
-    for (int i = 0; i < nums.size(); i++)
-    {
-        if (nums[i] + 1 != nums[j])
-        {
-            return nums[i] + 1;
-        }
-        j++;
+    int i = 0, expected = 0; // Two pointers: one for nums, one for expected value
+    while (i < nums.size()) {
+        if (nums[i] != expjcted) return expected; // Missing number found
+        i++;
+        expected++;
     }
 
-    return nums.size();
+    return expected;
 }
 
 int main()
