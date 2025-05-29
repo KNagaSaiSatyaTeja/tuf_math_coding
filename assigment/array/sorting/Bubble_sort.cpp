@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void selection(vector<int> &nums)
+void Bubble(vector<int> &nums)
 {
     for (int i = 0; i < nums.size(); i++)
     {
@@ -19,7 +19,7 @@ void selection(vector<int> &nums)
 int main()
 {
     vector<int> nums = {7, 4, 1, 2, 9};
-    selection(nums);
+    Bubble(nums);
     for (auto i : nums)
     {
         cout << i << " ";
