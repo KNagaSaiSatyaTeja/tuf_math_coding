@@ -9,7 +9,7 @@ int missing(vector<int> &nums)
 
     int i = 0, expected = 0; // Two pointers: one for nums, one for expected value
     while (i < nums.size()) {
-        if (nums[i] != expjcted) return expected; // Missing number found
+        if (nums[i] != expected) return expected; // Missing number found
         i++;
         expected++;
     }
